@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/logo1.png" type="imgs/x-icon" /> 
+  <title>SEVEN FORUM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <img src="wpp.png">
+      </div>
+    <div class="right-login">
+      <div class="card-login">
+        <h1>Login</h1>
+        <div class="textfield">
+          <label for="usuario">Usuário</label>
+          <input type="text" name="usuario" placeholder="Usuário">
+        </div>
+        <div class="textfield">
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" placeholder="Senha">
+        </div>
+        <button class="btn-login">ENTRAR</button>
+        <button class="btn-senha">RECUPERAR SENHA</button>
+        <button class="btn-cadastro">CRIAR CONTA</button>
+      </div>
+    </div>
+  </div>
+          
+</body> 
+
+
+#CSS
+
+body{
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-login{
+  width: 100vw;
+  height: 100vh;
+  background: url(../imagens/wpp.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-login{
+  width: center;
+  height: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-login > h1{
+  font-size: 3vw;
+  color: #00000;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #A9A9A9;
+  border-radius: 20px;
+}
+
+.left-login-img{
+  width: 15vw;
+  height: 15vw;
+}
+
+.right-login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 15px;
+  background: #A9A9A9;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+  color: #00000;
+  font-weight: 2000;
+  margin: 0;
+}
+
+.btn-senha{
+  font-size: 0,6vw;
+  color: #00000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 15px;
+  background: #A9A9A9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.textfield{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.textfield > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #DCDCDC;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #17161656;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label{
+  color: #DCDCDC;
+  margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+  color: #A9A9A9;
+}
+
+.btn-login{
+  width: 100%;
+  padding: 12px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #000000;
+  background: #DCDCDC;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #DCDCDC;
+}
+.btn-cadastro{
+  width: 100%;
+  padding: 12px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #000000;
+  background: #DCDCDC;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #DCDCDC;
+}
+
+@media only screen and (max-width: 600px){
+  .main-login{
+    flex-direction: column;
+  }
+  .left-login > h1{
+    display: none;
+  }
+  .left-login{
+    width:100%;
+    height: auto;
+  }
+  .right-login{
+    width: 100%;
+    height: auto;
+  }
+  .left-login-image{
+    width: 50vw;
+  }
+  .card-login{
+    width: 90%;
+  }
+}
